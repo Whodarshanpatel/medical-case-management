@@ -10,10 +10,10 @@ This progress log tracks implementation milestones, test verification, commits, 
 | 2. Database migrations, models, factory, seeders | Completed | `760e310` | Migrations ran on MySQL, seeded 2 users & 25 cases, 25 tests pass |
 | 3. Authentication & role-based authorization | Completed | `4eba5bc` | MedicalCasePolicy, User roles, FormRequests, 403 authorization |
 | 4. Dashboard & case management web screens | Completed | `4eba5bc` | 5 responsive Blade screens, live DB metrics, pagination, filters |
-| 5. REST API & Sanctum token auth | Completed | Pending | All 7 endpoints, Bearer tokens, consistent JSON envelope |
-| 6. Validation & security rules | Completed | Pending | FormRequests, ignore unique on update, policy authorization |
-| 7. Automated tests | Completed | Pending | 47 tests passed (163 assertions) covering all 6 required cases |
-| 8. Documentation & final verification | Next | — | — |
+| 5. REST API & Sanctum token auth | Completed | `62f89f8` | All 7 endpoints, Bearer tokens, consistent JSON envelope |
+| 6. Validation & security rules | Completed | `62f89f8` | FormRequests, ignore unique on update, policy authorization |
+| 7. Automated tests | Completed | `62f89f8` | 47 tests passed (163 assertions) covering all 6 required cases |
+| 8. Documentation & final verification | Completed | Pending | README.md, docs/database.md, docs/traceability.md, docs/progress.md |
 
 ---
 
@@ -75,3 +75,11 @@ This progress log tracks implementation milestones, test verification, commits, 
   5. Duplicate case number fails with HTTP 422 through API.
   6. Viewer cannot delete a case and receives HTTP 403 (Web & API).
   - Plus: Admin update/delete, Viewer read-only checks, 404 missing resource checks, token revocation, live dashboard count validation.
+
+### Milestone 8: Documentation and Final Verification Pass
+- **README.md**: Complete project overview, technology stack, prerequisites, installation guide, database creation, migrations & seeding instructions, demo credentials, automated testing instructions, REST API documentation with sample curl/JSON responses, and known assumptions.
+- **docs/database.md**: Database schema dictionary, column data types, indexes, keys, and ASCII ER sketch.
+- **docs/traceability.md**: Requirements Traceability Matrix linking REQ-001 through REQ-005 to concrete code files and specific automated test methods.
+- **docs/progress.md**: Sequential milestone tracking with commit hashes and test results.
+- **API Collection**: Postman collection in `docs/jajal_medical_api_collection.json`.
+- **Final Verification**: Ran `php artisan test` (47/47 passing, 163 assertions), verified MySQL migrations and seed counts (2 users, 25 cases), built production Vite assets. All requirements satisfied.
