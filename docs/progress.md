@@ -13,7 +13,7 @@ This progress log tracks implementation milestones, test verification, commits, 
 | 5. REST API & Sanctum token auth | Completed | `62f89f8` | All 7 endpoints, Bearer tokens, consistent JSON envelope |
 | 6. Validation & security rules | Completed | `62f89f8` | FormRequests, ignore unique on update, policy authorization |
 | 7. Automated tests | Completed | `62f89f8` | 47 tests passed (163 assertions) covering all 6 required cases |
-| 8. Documentation & final verification | Completed | Pending | README.md, docs/database.md, docs/traceability.md, docs/progress.md |
+| 8. Documentation & final verification | Completed | `8e1bc18` | README.md, docs/database.md, docs/traceability.md, docs/progress.md |
 
 ---
 
