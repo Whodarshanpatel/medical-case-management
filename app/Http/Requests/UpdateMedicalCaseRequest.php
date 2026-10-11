@@ -13,10 +13,8 @@ class UpdateMedicalCaseRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        $case = $this->route('case');
-        if (!($case instanceof MedicalCase) && is_numeric($case)) {
-            $case = MedicalCase::find($case);
-        }
+        $caseParam = $this->route('case') ?? $this->route('id');
+        $case = $caseParam instanceof MedicalCase ? $caseParam : MedicalCase::find($caseParam);
 
         return $this->user() && ($case ? $this->user()->can('update', $case) : $this->user()->isAdmin());
     }
@@ -28,8 +26,8 @@ class UpdateMedicalCaseRequest extends FormRequest
      */
     public function rules(): array
     {
-        $case = $this->route('case');
-        $caseId = $case instanceof MedicalCase ? $case->id : $case;
+        $caseParam = $this->route('case') ?? $this->route('id');
+        $caseId = $caseParam instanceof MedicalCase ? $caseParam->id : $caseParam;
 
         return [
             'case_number' => [
