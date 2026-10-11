@@ -2,7 +2,7 @@
 
 > Practical Assignment Submission for Software Developer Intern — Jajal Medical Services Pvt. Ltd.
 
-A robust, secure, production-grade Medical Case Management Web Application built with **PHP, Laravel, MySQL, Laravel Blade, Laravel Breeze, and Laravel Sanctum**. 
+A Medical Case Management Web Application built with **PHP, Laravel, MySQL, Laravel Blade, Laravel Breeze, and Laravel Sanctum**.
 
 This application allows surgical case tracking, clinical reviews, implant specifications, and role-based workflows for healthcare administrators and reviewers.
 
@@ -223,10 +223,10 @@ curl -X POST http://127.0.0.1:8000/api/login \
 
 ## 8. Documentation Artifacts
 
-- **[docs/database.md](file:///c:/Users/nusra/Desktop/jajal-medical-case-management/docs/database.md)**: Detailed schema specification, table definitions, column types, indexes, and ASCII entity-relationship sketch.
-- **[docs/traceability.md](file:///c:/Users/nusra/Desktop/jajal-medical-case-management/docs/traceability.md)**: Requirement Traceability Matrix linking REQ-001 through REQ-005 to concrete code files and tests.
-- **[docs/progress.md](file:///c:/Users/nusra/Desktop/jajal-medical-case-management/docs/progress.md)**: Sequential development progress log tracking milestones, commits, and verification status.
-- **[docs/jajal_medical_api_collection.json](file:///c:/Users/nusra/Desktop/jajal-medical-case-management/docs/jajal_medical_api_collection.json)**: Ready-to-import Postman API collection.
+- **[Database Documentation](docs/database.md)**: Database schema, tables, columns, indexes, and relationships.
+- **[Requirement Traceability](docs/traceability.md)**: Mapping of assignment requirements to implementation and tests.
+- **[Development Progress](docs/progress.md)**: Development milestones and verification history.
+- **[API Collection](docs/jajal_medical_api_collection.json)**: Importable Postman or Thunder Client API collection.
 
 ---
 
